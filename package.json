@@ -1,0 +1,25 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "A simple todo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luigi-ALexandru/todo.git"
+  },
+  "author": "Luigi Istratescu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luigi-ALexandru/todo/issues"
+  },
+  "homepage": "https://github.com/Luigi-ALexandru/todo#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1"
+  }
+}

@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: blanchedalmond;
+    border-bottom: 1px solid black;
+}
+
+.content-left {
+    width: 10rem;
+}
+
+.content-right {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-menu {
+    transition: 0.3s;
+    border: 1px solid black;
+}
+
+.main-menu:hover {
+    transform: rotate(180deg);
+}
+
+.menu-icon {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.menu-icon:hover .dropdown-content {
+    display: block;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.dropmenu {
+    margin-bottom: 5px;
+}
+
+.dropmenu:hover {
+    background-color: rgb(164, 226, 164);
+    cursor: default;
+}
+
+.dropmenu:active {
+    transform: scale(95%);
+}
+
+.dropmenu {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+}
+
+.xform {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    padding: 1rem;
+    z-index: 10;
+}
+
+input[type="text"],
+textarea {
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+.create {
+    margin: 1rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+}
+
+.close {
+    padding: 0.3rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+}
+.create:hover,
+.close:hover,
+.deleteBtn:hover {
+    background-color: rgb(164, 226, 164);
+}
+
+.create:active,
+.close:active,
+.deleteBtn:active {
+    transform: scale(95%);
+}
+
+.result {
+    border: 1px solid black;
+    padding: 1rem;
+    display: inline-block;
+    transition: 0.3s;
+    margin: 1rem;
+    max-width: 400px;
+    overflow-wrap: break-word;
+}
+
+.result:hover {
+    transform: scale(1.1);
+}
+
+.deleteBtn {
+    margin-top: 1rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+}

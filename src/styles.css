@@ -15,9 +15,10 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* This sets the font weight to bold */
     padding: 1rem;
-    background-color: blanchedalmond;
+    /*background-color: blanchedalmond;*/
     border-bottom: 1px solid black;
 }
 
@@ -34,7 +35,6 @@
 
 .main-menu {
     transition: 0.3s;
-    border: 1px solid black;
 }
 
 .main-menu:hover {
@@ -57,22 +57,21 @@
 
 .dropmenu {
     margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+    font-size: 1rem;
+    background-color: white;
+    border: none;
 }
 
 .dropmenu:hover {
-    background-color: rgb(164, 226, 164);
+    transform: scale(110%);
+    border-bottom: 1px solid black;
     cursor: default;
 }
 
 .dropmenu:active {
-    transform: scale(95%);
-}
-
-.dropmenu {
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    border: 1px solid black;
-    background-color: blanchedalmond;
+    transform: scale(100%);
 }
 
 .xform {
@@ -87,9 +86,9 @@
     width: 400px;
     transform: translate(-50%, -50%);
     border: 1px solid black;
-    background-color: blanchedalmond;
     padding: 1rem;
     z-index: 10;
+    background-color: white;
 }
 
 input[type="text"],
@@ -98,30 +97,41 @@ textarea {
     border: 1px solid black;
 }
 
+textarea {
+    resize: none;
+}
+
 .create {
+    display: inline-block;
+    width: auto;
     margin: 1rem;
     padding: 0.3rem;
     font-size: 1rem;
     border: 1px solid black;
-    background-color: blanchedalmond;
+    background-color: white;
+    border: none;
 }
 
 .close {
+    display: inline-block;
+    width: auto;
     padding: 0.3rem;
     font-size: 1rem;
     border: 1px solid black;
-    background-color: blanchedalmond;
+    background-color: white;
+    border: none;
 }
 .create:hover,
 .close:hover,
 .deleteBtn:hover {
-    background-color: rgb(164, 226, 164);
+    border-bottom: 1px solid black;
+    transform: scale(110%);
 }
 
 .create:active,
 .close:active,
 .deleteBtn:active {
-    transform: scale(95%);
+    transform: scale(100%);
 }
 
 .result {
@@ -142,6 +152,11 @@ textarea {
     margin-top: 1rem;
     padding: 0.3rem;
     font-size: 1rem;
-    border: 1px solid black;
-    background-color: blanchedalmond;
+    border: none;
+    background-color: white;
+}
+
+fieldset {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }

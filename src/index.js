@@ -1,6 +1,6 @@
 //new list button
 import './styles.css';
-import { organizeTasks, activateOrganizeButton } from './organize';
+import { deleteTasks } from './delete';
 const contentRight = document.querySelector(".content-right");
 let deleteButton = document.createElement("button");
 
@@ -132,9 +132,9 @@ function createList() {
         }
         //delete button function called
         handleDelete(result);
-        const organize = document.querySelector(".organize");
-        organize.addEventListener("click", function(){
-        organizeTasks(contentRight, result);
+        const deleteAll = document.querySelector(".delete-all");
+        deleteAll.addEventListener("click", function(){
+        deleteTasks(contentRight, result);
     })
     })
     //close button
